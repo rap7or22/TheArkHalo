@@ -6,7 +6,7 @@ function cleanup() {
     python3 cleanup.py
 }
 
-trap 'cleanup' SIGTERM
+#trap 'cleanup' SIGTERM
 
 "${@}" &
 python3 haloGenerate.py
