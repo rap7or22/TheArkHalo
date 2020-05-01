@@ -49,8 +49,8 @@ def allocateIPs(data):
         netmask = os.environ.get("INTERFACE_MASK", "/24")
 
     # Delete any interfaces using the IP address
-    print("[*] Deleting old interfaces....")
-    _delAllInterfaces(device, label="ark")
+    #print("[*] Deleting old interfaces....")
+    #_delAllInterfaces(device, label="ark")
     print("[*] Adding new interfaces")
     for i in data['addresses']:
         try:
